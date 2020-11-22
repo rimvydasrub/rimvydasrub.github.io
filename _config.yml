@@ -4,8 +4,7 @@
 title:               Rimvydas Rubavicius
 tagline:             'PhD student at the University of Edinburgh'
 description:         'Personal website'
-url:                 'http://rimvydasrub.github.io'
-baseurl:             ''
+
 
 # About/contact
 author:
@@ -14,7 +13,7 @@ author:
   email:             rimvydas.rubavicius@ed.ac.uk
 
 # Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme: blue
+color-scheme: navy
 
 # Permalinks
 permalink: pretty

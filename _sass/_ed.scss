@@ -722,7 +722,7 @@ li.prose-indent {
 .theme-base-red .sidebar,
 .theme-base-red .sidebar-toggle:active,
 .theme-base-red #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #041444;
+  background-color: #ac4142;
 }
 
 .theme-base-red .container a,
@@ -801,4 +801,16 @@ li.prose-indent {
 .theme-base-brown .sidebar-toggle,
 .theme-base-brown .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Navy */
+.theme-base-navy .sidebar,
+.theme-base-navy .sidebar-toggle:active {
+  background-color: #041444;
+}
+
+.theme-base-navy .container a,
+.theme-base-navy .sidebar-toggle,
+.theme-base-navy .related-posts li a:hover {
+  color: #041444;
 }
