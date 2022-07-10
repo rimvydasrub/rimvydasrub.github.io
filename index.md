@@ -4,47 +4,36 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a PhD student in the [Center of Doctoral Training in Natural Language Processing](https://web.inf.ed.ac.uk/cdt/natural-language-processing)
+hosted by [Institute for Language, Cognition and Computation](https://web.inf.ed.ac.uk/ilcc)
+supervised by [Alex Lascarides](http://homepages.inf.ed.ac.uk/alex/) and [Subramanian Ramamoorthy](http://rad.inf.ed.ac.uk/)
+
+I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how complexities of natural interaction with human teacher can help to learn new tasks more effectively. In particular, I am studying how complex natural language can help to obtain knowledge about new concepts introduced as part of embodied conversation to guide agent's understanding about the domain.
+
+My research interests include:
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Grounding**: incrementally learning grounding models as part of human--robot interaction in embodied conversation.
+- **Planning**: solving sequencial decision problems in embodied environment
+- **Reasoning**: exploring logical, probabilistic, and causal reasoning about  the world to be able to answer complex questions about it.
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[Feb. 2022]** Our paper about on incremental symbol grounding with complex referential expressions is accepted to NAACL 2022.
 
 ## Publications
 
-- **Mnemonics Training: Multi-Class Incremental Learning without Forgetting**
+- **Interactive Symbol Grounding with Complex Referential Expressions**
   <br>
-  **Yaoyao Liu**, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
+  **Rimvydas Rubavicius**, Alex Lascarides
   <br>
-  IEEE Conference on Computer Vision and Pattern Recognition. **CVPR 2020**.
+ 2022 Conference of the North American Chapter of the Association for Computational Linguistics. **NAACL 2022**.
   <br>
-  [[PDF](https://arxiv.org/pdf/2002.10211.pdf)] [[Code](https://github.com/yaoyao-liu/mnemonics)] <strong><i style="color:#e74d3c">Oral Presentation</i></strong>
+  [[ACL Anthology](https://aclanthology.org/2022.naacl-main.358/)]
+  [[PDF](https://aclanthology.org/2022.naacl-main.358.pdf)] [[Code](https://github.com/itl-ed/igre)]
 
-- **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
-  <br>
-  Xinzhe Li, Qianru Sun, **Yaoyao Liu**, Shibao Zheng, Qin Zhou, Tat-Seng Chua, Bernt Schiele
-  <br>
-  33rd Conference on Neural Information Processing Systems. **NeurIPS 2019**.
-  <br>
-  [[PDF](http://papers.nips.cc/paper/9216-learning-to-self-train-for-semi-supervised-few-shot-classification.pdf)] [[Code](https://github.com/xinzheli1217/learning-to-self-train)]
-
-- **Meta-Transfer Learning for Few-Shot Learning**
-  <br>
-  Qianru Sun\*, **Yaoyao Liu\***, Tat-Seng Chua, Bernt Schiele
-  <br>
-  IEEE Conference on Computer Vision and Pattern Recognition. **CVPR 2019**.
-  <br>
-  [[PDF](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf)] [[Code](https://github.com/yaoyao-liu/meta-transfer-learning)] [[Project](https://mtl.yyliu.net/)]
 
 ## Services
 
-- Conference Reviewers: NeurIPS 2020, CVPR 2020.
-- Journal Reviewers: T-PAMI, IJCV.
+- Conference Reviewers: EMNLP2022
