@@ -10,8 +10,6 @@ supervised by [Alex Lascarides](http://homepages.inf.ed.ac.uk/alex/) and [Subram
 
 I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how complexities of natural interaction with human teacher can help to learn new tasks more effectively. In particular, I am studying how complex natural language can help to obtain knowledge about new concepts introduced as part of embodied conversation to guide agent's understanding about the domain.
 
-My research interests include:
-
 ## Research Interests
 
 - **Grounding**: incrementally learning grounding models as part of human--robot interaction in embodied conversation.
