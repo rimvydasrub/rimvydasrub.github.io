@@ -8,13 +8,13 @@ I am a PhD student in the [Center of Doctoral Training in Natural Language Proce
 hosted by [Institute for Language, Cognition and Computation](https://web.inf.ed.ac.uk/ilcc)
 supervised by [Alex Lascarides](http://homepages.inf.ed.ac.uk/alex/) and [Subramanian Ramamoorthy](http://rad.inf.ed.ac.uk/)
 
-I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how the complexities of natural interaction with human teachers can help to learn new tasks more effectively. In particular, I am studying how complex natural language can help to obtain knowledge about new concepts introduced as part of the embodied conversation to guide an agent's understanding of the domain.
+I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how the complexities of natural interaction with human teachers can aid in learning novel tasks 
 
 ## Research Interests
 
+- **Reasoning**: exploring logical, probabilistic, and causal reasoning about the world to be able to answer complex queries.
 - **Grounding**: incrementally learning grounding models as part of human-robot interaction in embodied conversation.
-- **Planning**: solving sequential decision problems in the embodied environment
-- **Reasoning**: exploring logical, probabilistic, and causal reasoning about  the world to be able to answer complex questions about it.
+- **Planning**: solving sequential decision problems.
 
 ## News
 
@@ -34,5 +34,5 @@ I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/inter
 
 ## Services
 
-- Reviewing: EMNLP2022
-- Teaching Support: Artificial Intelligence, Machine Learning, Natural Language Processing 
+- Reviewing: [EMNLP2022](https://2022.emnlp.org/), [EMNLP2023](https://2023.emnlp.org/)
+- Teaching: during my time at the University of Edinburgh I have provided teaching support (TA, tutor, marker, demonstrator) for a variety of courses in the undergraduate and postgraduate studies covering topics in foundational artificial intelligence, probabilistic machine learning, and natural language processing. 
