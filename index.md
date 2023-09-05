@@ -8,7 +8,7 @@ I am a PhD student in the [Center of Doctoral Training in Natural Language Proce
 hosted by [Institute for Language, Cognition and Computation](https://web.inf.ed.ac.uk/ilcc)
 supervised by [Alex Lascarides](http://homepages.inf.ed.ac.uk/alex/) and [Subramanian Ramamoorthy](http://rad.inf.ed.ac.uk/)
 
-I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how the complexities of natural interaction with human teachers can aid in learning novel tasks 
+I am working on [Interactive Task Learning](https://mitpress.mit.edu/books/interactive-task-learning) and how the complexities of natural interaction can aid in learning novel tasks. 
 
 ## Research Interests
 
