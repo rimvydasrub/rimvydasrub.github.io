@@ -5,21 +5,22 @@ html {
     font-family: 'Public Sans', sans-serif;
     font-size: large;
     font-weight: 300;
+    background-color: #efeee7
 }
 
 a {
     text-decoration: none;
-    color: #098487;
+    color: #343464;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
-    color: #343464;
+    color: #098487;
 }
 
 a:hover {
-    color: #098487;
+    color: #343464;
 }
 
 #content {
@@ -43,7 +44,7 @@ a:hover {
 
 .avatar {
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
 }
 
 .icons {
