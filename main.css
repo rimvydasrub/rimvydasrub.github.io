@@ -10,17 +10,18 @@ html {
 
 a {
     text-decoration: none;
-    color: #343464;
+    color: #602893;
 }
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    color: #098487;
+    font-weight: 600;
+    color: #602893;
+    letter-spacing: 0.05em; /* Adjust this value as needed */
 }
 
 a:hover {
-    color: #343464;
+    color: #602893;
 }
 
 #content {
