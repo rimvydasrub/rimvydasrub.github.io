@@ -34,17 +34,6 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#content::before {
-    content: '';
-    position: absolute;
-    left: 2rem;
-    top: 2.5rem;
-    bottom: 2.5rem;
-    width: 2px;
-    background-color: #0691ca;
-    border-radius: 1px;
-}
-
 h1 {
     font-family: 'Helvetica', sans-serif;
     font-weight: 400;
