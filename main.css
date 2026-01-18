@@ -1,126 +1,243 @@
-/* Import modern fonts */
-@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;600&display=swap');
+:root {
+  --bg-color: #f8fafc;
+  /* Sophisticated cool white */
+  --text-primary: #334155;
+  /* Slate 700 */
+  --text-secondary: #64748b;
+  /* Slate 500 */
+  --accent-color: #2f4858;
+  /* Requested Accent */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  /* Light glass */
+  --glass-border: rgba(255, 255, 255, 0.0);
+  --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
-    font-family: 'Helvetica', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #122035;
-    background-color: #eef4ed;
-    height: 100%;
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    margin: 0;
-    position: relative;
-    z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
 }
 
+/* Background Mesh Gradient */
+.background-mesh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(47, 72, 88, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(47, 72, 88, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 50% 50%, rgba(200, 220, 255, 0.4) 0%, transparent 50%);
+  background-size: 200% 200%;
+  animation: bgPan 15s ease infinite alternate;
+  filter: blur(40px);
+}
+
+/* Subtle moving shapes */
+.background-mesh::before,
+.background-mesh::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: drift 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background-mesh::before {
+  width: 50vw;
+  height: 50vh;
+  background: rgba(47, 72, 88, 0.05);
+  top: -10%;
+  left: -10%;
+  animation-duration: 25s;
+}
+
+.background-mesh::after {
+  width: 40vw;
+  height: 40vh;
+  background: rgba(94, 164, 255, 0.1);
+  bottom: -5%;
+  right: -5%;
+  animation-duration: 18s;
+  animation-delay: -5s;
+}
+
+@keyframes bgPan {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(50px, 50px) rotate(10deg);
+  }
+}
+
+/* Content Container */
 #content {
-    background: rgba(238, 244, 237, 0.98);
-    border-radius: 0;
-    padding: 4rem;
-    max-width: 700px;
-    width: 90%;
-    text-align: left;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-    box-shadow: 0 8px 16px rgba(18, 32, 53, 0.15);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 4rem;
+  max-width: 720px;
+  width: 90%;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.02),
+    0 10px 15px -3px rgba(0, 0, 0, 0.02),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+#content:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.05),
+    0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+/* Typography */
 h1 {
-    font-family: 'Helvetica', sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: #174e8c;
-    margin: 1.5rem 0;
-    letter-spacing: 0.01em;
-    padding-left: 0;
+  font-weight: 700;
+  font-size: 3.5rem;
+  /* Larger, more sophisticated */
+  letter-spacing: -0.04em;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
 }
 
 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #122035;
-    margin: 0 0 1.5rem 0;
-    padding-right: 10%;
-    font-style: italic;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+p.intro-text {
+  font-weight: 500;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+}
+
+p.sub-text {
+  font-weight: 400;
 }
 
 a {
-    text-decoration: none;
-    color: #174e8c;
-    transition: color 0.2s ease;
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  background-image: linear-gradient(var(--accent-color), var(--accent-color));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s ease, color 0.3s ease;
+  padding-bottom: 2px;
 }
 
 a:hover {
-    color: #122035;
+  background-size: 100% 2px;
 }
 
-.avatar {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    /* filter: grayscale(100%); */
-}
-
+/* Icons */
 .icons {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 1.5rem;
-    margin: 2rem 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin-top: 1rem;
+  justify-content: center;
 }
 
 .icons li {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #eef4ed;
-}
-
-.icons i {
-    width: 1.5rem;
-    height: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons a {
-    color: #174e8c;
-    font-size: 1.25rem;
-    transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: white;
+  border: 1px solid rgba(47, 72, 88, 0.1);
+  color: var(--accent-color);
+  font-size: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding-bottom: 0;
+  /* Reset link padding for icons */
+  background-image: none;
+  /* Remove underline gradient */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .icons a:hover {
-    color: #122035;
+  background: var(--accent-color);
+  color: #fff;
+  transform: translateY(-4px) scale(1.05);
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 20px -5px rgba(47, 72, 88, 0.3);
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-    #content {
-        padding: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .icons {
-        gap: 1rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #content {
+    padding: 2rem;
+    width: 92%;
+    border-radius: 20px;
+  }
+
+  p.intro-text {
+    font-size: 1.1rem;
+  }
+
+  .icons a {
+    width: 44px;
+    height: 44px;
+  }
 }
